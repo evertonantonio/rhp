@@ -1,0 +1,134 @@
+
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <title>Calendar</title>
+      <meta name="description" content="Calendar">
+      <meta name="author" content="Charles Anderson">
+      <link rel="stylesheet" href="style2.css">
+    
+    </head>
+    
+    <body>
+        <img  src="https://realinstitutodeoncologia.com.br/wp-content/uploads/2018/03/logo.png">
+        <br><br><br><br>
+      <div class="content">
+        <div class="calendar-container">
+          <div class="calendar"> 
+            <div class="year-header"> 
+              <span class="left-button" id="prev"> &lang; </span> 
+              <span class="year" id="label"></span> 
+              <span class="right-button" id="next"> &rang; </span>
+            </div> 
+            <table class="months-table"> 
+              <tbody>
+                <tr class="months-row">
+                  <td class="month">Jan</td> 
+                  <td class="month">Fev</td> 
+                  <td class="month">Mar</td> 
+                  <td class="month">Abr</td> 
+                  <td class="month">Mai</td> 
+                  <td class="month">Jun</td> 
+                  <td class="month">Jul</td>
+                  <td class="month">Ago</td> 
+                  <td class="month">Set</td> 
+                  <td class="month">Out</td>          
+                  <td class="month">Nov</td>
+                  <td class="month">Dez</td>
+                </tr>
+              </tbody>
+            </table> 
+            <hr>
+            <table class="days-table"> 
+              <td class="day">Do</td> 
+              <td class="day">Se</td> 
+              <td class="day">Te</td> 
+              <td class="day">Qa</td> 
+              <td class="day">Qi</td> 
+              <td class="day">Sx</td> 
+              <td class="day">Sa</td>
+            </table> 
+            <div class="frame"> 
+              <table class="dates-table"> 
+                  <tbody class="tbody">             
+                  </tbody> 
+              </table>
+            </div> 
+            <button class="button" id="add-button">Criar uma nova reunião</button>
+          </div>
+        </div>
+        <div class="events-container">
+        </div>
+        <div class="dialog" id="dialog">
+            <h2 class="dialog-header"> Adicionar nova reunião </h2>
+            <form class="form" id="form">
+              <div class="form-container" align="center">
+                <label class="form-label" id="valueFromMyButton" for="name" >Horário de inicio</label>
+                <select id="horas">
+              
+                  <option>08h:00</option>
+                  <option>08h:30</option>
+                  <option>09h:00</option>
+                  <option>09h:30</option>
+                  <option>10h:00</option>
+                  <option>10h:30</option>
+                  <option>11h:00</option>
+                  <option>11h:30</option>
+                  <option>12h:00</option>
+                  <option>12h:30</option>
+                  <option>13h:00</option>
+                  <option>13h:30</option>
+                  <option>14h:00</option>
+                  <option>14h:30</option>
+                  <option>15h:00</option>
+                  <option>15h:30</option>
+                  <option>16h:00</option>
+          
+              </select>
+              <br><br>
+
+              <label class="form-label" id="valueFromMyButton" for="name" >Horário de encerramento</label>
+              <select id="horas">
+              
+                <option>08h:30</option>
+                <option>08h:30</option>
+                <option>09h:00</option>
+                <option>09h:30</option>
+                <option>10h:00</option>
+                <option>10h:30</option>
+                <option>11h:00</option>
+                <option>11h:30</option>
+                <option>12h:00</option>
+                <option>12h:30</option>
+                <option>13h:00</option>
+                <option>13h:30</option>
+                <option>14h:00</option>
+                <option>14h:30</option>
+                <option>15h:00</option>
+                <option>15h:30</option>
+                <option>16h:00</option>
+                <option>16h:30</option>
+                <option>17h:00</option>
+        
+            </select>
+
+              <br><br>
+                <label class="form-label" id="valueFromMyButton" for="name">Nome da reunião</label>
+                <input class="input" type="text" id="name" maxlength="36">
+                <label class="form-label" id="valueFromMyButton" for="count">Número de pessoas para a reunião</label>
+                <input class="input" type="number" id="count" min="0" max="1000000" maxlength="7">
+                <input type="button" value="Cancelar" class="button" id="cancel-button">
+                <input type="button" value="OK" class="button" id="ok-button">
+              </div>
+            </form>
+          </div>
+      </div>
+      <!-- Dialog Box-->
+      <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
+      </script>
+      <script src="script.js"></script>
+    </body>
+    </html>
